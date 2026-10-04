@@ -1,93 +1,383 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hiraya Journeys | Ilocos Norte Travel</title>
-<meta name="description" content="Hiraya Journeys — authentic, responsible and soulful journeys through Ilocos Norte.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hiraya Journeys — authentic travel experiences in Ilocos Norte, Philippines. Tours, transfers, attractions, hotels and custom journeys.">
+<meta name="theme-color" content="#f4f1eb">
+<title>Hiraya Journeys — Ilocos Norte Travel</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+
 <style>
-:root{--ink:#24211d;--muted:#70695f;--cream:#f6f1e8;--paper:#fbf9f5;--stone:#e9e2d6;--line:#d9d0c2;--accent:#8a775e;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:20;background:rgba(251,249,245,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,72px)}.brand{display:flex;align-items:center;gap:11px;font-family:"Playfair Display";font-weight:700;letter-spacing:1px;line-height:.9}.mark{width:42px;height:42px;border:1px solid var(--accent);border-radius:50%;display:grid;place-items:center;font-size:13px}.brand small{font-family:"DM Sans";font-size:9px;letter-spacing:3px}.nav nav{display:flex;gap:25px;font-size:13px;color:var(--muted)}.btn{display:inline-block;padding:13px 20px;border-radius:999px;border:1px solid var(--ink);font-size:13px;font-weight:700}.btn.dark{background:var(--ink);color:white}.hero{min-height:78vh;display:grid;align-items:end;padding:clamp(36px,7vw,90px);background:linear-gradient(90deg,rgba(24,22,19,.7),rgba(24,22,19,.18)),url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2200&q=88") center/cover}.hero-copy{max-width:760px;color:#fff}.eyebrow{font-size:11px;letter-spacing:3px}.hero h1{font:600 clamp(44px,7vw,86px)/.98 "Playfair Display";margin:16px 0}.hero h1 em,.section h2 em,.split h2 em,.cta h2 em{font-weight:500}.hero p{max-width:600px;font-size:17px;color:#eee;margin-bottom:28px}.light{background:#fff;color:var(--ink);border-color:#fff}.section{padding:90px clamp(22px,7vw,100px)}.stone{background:var(--stone)}.intro{background:var(--paper)}.cols{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:start}.section h2{font:600 clamp(34px,5vw,60px)/1.05 "Playfair Display";margin:12px 0 20px}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.section-head p{max-width:470px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);overflow:hidden}.card img{width:100%;height:280px;object-fit:cover;display:block;transition:.5s}.card:hover img{transform:scale(1.04)}.card div{padding:18px}.card small,.service small{color:var(--accent);font-size:10px;letter-spacing:2px;text-transform:uppercase}.card h3,.service h3{font:600 25px "Playfair Display";margin:5px 0}.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.service{display:grid;grid-template-columns:180px 1fr;border:1px solid var(--line);background:#fff}.service img{width:100%;height:100%;min-height:220px;object-fit:cover}.service div{padding:24px}.service p{color:var(--muted)}.link{font-weight:700;font-size:13px;border-bottom:1px solid currentColor}.split{display:grid;grid-template-columns:1fr 1fr;min-height:560px}.split-img{background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=88") center/cover}.split-copy{background:var(--ink);color:white;padding:80px clamp(30px,7vw,100px);display:flex;flex-direction:column;justify-content:center}.split-copy p{color:#d9d3c9;max-width:540px}.values{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}.values div{border-top:1px solid var(--line);padding-top:20px}.values b{font-size:11px;color:var(--accent)}.values h3{font:600 25px "Playfair Display";margin:10px 0}.values p{color:var(--muted)}.booking{background:var(--cream)}.form{max-width:900px;background:#fff;border:1px solid var(--line);padding:30px;margin-top:30px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700}.field input,.field select,.field textarea{font:inherit;border:1px solid var(--line);padding:13px;border-radius:10px;background:#fff}.field textarea{min-height:120px}.check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted)}.result{margin-top:16px;padding:15px;background:var(--cream);display:none}.shop{background:var(--paper)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{border:1px solid var(--line);background:#fff;padding:22px}.product .circle{height:170px;background:linear-gradient(145deg,#d8c8ae,#8a775e);border-radius:50%;display:grid;place-items:center;color:#fff;font:600 35px "Playfair Display";margin-bottom:18px}.price{font-weight:700}.cta{padding:75px clamp(22px,7vw,100px);background:var(--stone);display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{font:600 clamp(35px,5vw,60px)/1.05 "Playfair Display";margin:10px 0}footer{padding:35px clamp(22px,7vw,100px);display:flex;justify-content:space-between;gap:30px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}footer b{color:var(--ink);letter-spacing:1px}footer div:last-child{display:flex;gap:20px}@media(max-width:800px){.nav nav{display:none}.nav .btn{padding:10px 14px}.cols,.split{grid-template-columns:1fr}.cards,.values,.products{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:1fr}.service{grid-template-columns:130px 1fr}.section-head{display:block}.section-head p{max-width:none}.hero{min-height:72vh;padding:30px 22px}.hero h1{font-size:48px}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.cta{display:block}.cta .btn{margin-top:20px}footer{display:block}footer div:last-child{margin-top:20px;flex-wrap:wrap}}@media(max-width:520px){.cards,.values,.products{grid-template-columns:1fr}.service{grid-template-columns:1fr}.service img{height:210px}.section{padding:65px 20px}}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+:root{
+  --ivory:#f5f1ea;
+  --paper:#fbfaf7;
+  --sand:#ded6ca;
+  --taupe:#b9afa2;
+  --ink:#22201d;
+  --muted:#6d675f;
+  --line:rgba(34,32,29,.13);
+  --white:#fff;
+  --radius:28px;
+  --shadow:0 20px 60px rgba(35,31,26,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"DM Sans",sans-serif;
+  color:var(--ink);
+  background:var(--ivory);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%}
+button,input,select,textarea{font:inherit}
+.container{width:min(1160px,92%);margin:auto}
+
+header{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  padding:18px 0;
+  background:rgba(245,241,234,.82);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(34,32,29,.07);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.12em}
+.logo-img{width:52px;height:52px;border-radius:50%;object-fit:cover;display:block;box-shadow:0 5px 18px rgba(34,32,29,.14);border:1px solid rgba(141,128,111,.45)}
+.footer .logo-img{width:58px;height:58px}
+.logo span:last-child{font-size:13px;line-height:1.05}
+.logo small{display:block;font-weight:500;letter-spacing:.27em;color:var(--muted);margin-top:3px}
+nav{display:flex;gap:28px;align-items:center}
+nav a{font-size:13px;font-weight:600;color:#4f4942}
+.nav-cta,.hero-btn,.dark-btn{
+  border:0;background:var(--ink);color:white;border-radius:999px;
+  padding:14px 22px;font-weight:700;cursor:pointer;
+}
+.menu{display:none;background:none;border:0;font-size:26px}
+
+.hero{min-height:100svh;padding-top:90px;display:grid;align-items:end;position:relative;overflow:hidden}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+   linear-gradient(90deg,rgba(18,17,15,.68),rgba(18,17,15,.24) 65%,rgba(18,17,15,.10)),
+   url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2200&q=88") center/cover;
+  transform:scale(1.02);
+}
+.hero-content{position:relative;color:#fff;padding:110px 0 100px;max-width:850px}
+.eyebrow{font-size:12px;letter-spacing:.35em;text-transform:uppercase;font-weight:600}
+.hero h1{
+  font-family:"Playfair Display",serif;font-weight:500;
+  font-size:clamp(54px,8vw,100px);line-height:.98;margin:22px 0;
+  letter-spacing:-.04em;
+}
+.hero h1 em{font-weight:400}
+.hero p{font-size:18px;max-width:650px;color:rgba(255,255,255,.88);margin-bottom:30px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-btn{background:#fff;color:var(--ink);padding:16px 25px}
+.outline-btn{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);padding:15px 24px;border-radius:999px;font-weight:700}
+.scroll{margin-top:60px;font-size:11px;letter-spacing:.25em;text-transform:uppercase;opacity:.7}
+
+section{padding:100px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}
+.kicker{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#8a7c6d;font-weight:700}
+h2{font-family:"Playfair Display",serif;font-size:clamp(40px,5vw,65px);font-weight:500;line-height:1.03;letter-spacing:-.03em}
+.section-head p{max-width:430px;color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 30px rgba(30,26,22,.04)}
+.card-img{height:280px;object-fit:cover;transition:transform .7s}
+.card:hover .card-img{transform:scale(1.04)}
+.card-body{padding:23px}
+.card h3{font-family:"Playfair Display",serif;font-size:27px;font-weight:500;margin-bottom:7px}
+.card p{color:var(--muted);font-size:14px}
+.card-link{display:inline-block;margin-top:17px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+
+.band{background:#282622;color:#fff}
+.band .kicker{color:#c8b9a7}
+.band h2{max-width:700px}
+.band p{color:#c8c3bb}
+.experiences{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.exp{background:#fff;color:var(--ink);border-radius:25px;overflow:hidden}
+.exp img{height:220px;object-fit:cover}
+.exp-body{padding:24px}
+.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.16em;background:#eee9e1;padding:7px 10px;border-radius:999px;margin-bottom:13px}
+.exp h3{font-family:"Playfair Display",serif;font-size:29px;font-weight:500}
+.price{font-size:15px;font-weight:700;margin:14px 0;color:#554e45}
+
+.story{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.story-img{height:620px;border-radius:30px;object-fit:cover}
+.story-copy p{color:var(--muted);font-size:17px;margin:22px 0}
+.quote{font-family:"Playfair Display",serif;font-size:30px;line-height:1.25;border-left:2px solid #a69784;padding-left:22px;margin:30px 0}
+
+.booking-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:stretch}
+.booking-intro{background:#2b2925;color:#fff;border-radius:30px;padding:45px}
+.booking-intro h2{margin:15px 0}
+.booking-intro p{color:#d1cbc3}
+.booking-intro ul{list-style:none;margin-top:28px}
+.booking-intro li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14px}
+.form-card{background:#fff;border-radius:30px;padding:35px;box-shadow:var(--shadow)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+label{font-size:12px;font-weight:700;color:#59534c}
+input,select,textarea{
+  width:100%;border:1px solid var(--line);background:#faf8f4;
+  border-radius:14px;padding:14px 15px;outline:none;color:var(--ink);
+}
+textarea{min-height:100px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:#8c7d6b;box-shadow:0 0 0 3px rgba(140,125,107,.10)}
+.submit{width:100%;margin-top:18px;padding:16px;border:0;border-radius:999px;background:var(--ink);color:#fff;font-weight:700;cursor:pointer}
+.note{font-size:11px;color:#827a70;margin-top:10px;text-align:center}
+.success{display:none;margin-top:16px;background:#eee9e1;border-radius:15px;padding:14px;font-size:13px}
+.success.show{display:block}
+
+.footer{background:#1f1e1b;color:#fff;padding:55px 0 25px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.footer p,.footer a{color:#bcb6ae;font-size:13px}
+.footer h4{font-size:12px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:20px;font-size:11px;color:#8f8981}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:900px){
+  nav{display:none}
+  .menu{display:block}
+  .cards{grid-template-columns:1fr 1fr}
+  .experiences{grid-template-columns:1fr}
+  .story,.booking-wrap{grid-template-columns:1fr}
+  .story-img{height:450px}
+  .booking-intro{padding:32px}
+}
+@media(max-width:600px){
+  section{padding:75px 0}
+  .hero-content{padding:90px 0 65px}
+  .hero h1{font-size:52px}
+  .hero p{font-size:16px}
+  .cards{grid-template-columns:1fr}
+  .card-img{height:240px}
+  .section-head{display:block}
+  .section-head p{margin-top:15px}
+  .form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .footer-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
+
 <body>
-<header class="nav">
-<a class="brand" href="#top"><span class="mark">HJ</span><span>HIRAYA<br><small>JOURNEYS</small></span></a>
-<nav><a href="#journeys">Journeys</a><a href="#destinations">Destinations</a><a href="#shop">Souvenirs</a><a href="#story">Our Story</a></nav>
-<a class="btn dark" href="#booking">Plan My Journey</a>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">
+      <img class="logo-img" src="logo.jpeg" alt="Hiraya Journeys logo">
+      <span>HIRAYA<small>JOURNEYS</small></span>
+    </a>
+    <nav>
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#story">Our Story</a>
+      <a href="#booking">Book</a>
+    </nav>
+    <a class="nav-cta" href="#booking">Plan My Journey</a>
+    <button class="menu" onclick="document.querySelector('nav').style.display='flex'">☰</button>
+  </div>
 </header>
 
-<main id="top">
-<section class="hero"><div class="hero-copy"><div class="eyebrow">ILOCOS NORTE · PHILIPPINES</div><h1>Where dream takes route,<br><em>journey comes to life.</em></h1><p>Authentic, responsible and soulful journeys celebrating Ilocano culture, nature, history, local communities and hospitality.</p><a class="btn light" href="#booking">Start Your Journey</a></div></section>
+<main>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="eyebrow">Ilocos Norte · Philippines</div>
+    <h1>Where dreams take route,<br><em>journeys come to life.</em></h1>
+    <p>Authentic, responsible and soulful journeys celebrating Ilocano culture, nature, history, local communities and hospitality.</p>
+    <div class="hero-actions">
+      <a class="hero-btn" href="#booking">Start Your Journey</a>
+      <a class="outline-btn" href="#destinations">Explore Ilocos Norte</a>
+    </div>
+    <div class="scroll">Scroll to discover ↓</div>
+  </div>
+</section>
 
-<section class="section intro" id="story"><div class="eyebrow">01 / THE HIRAYA WAY</div><div class="cols"><div><h2>Travel with meaning.<br><em>Leave with memories.</em></h2></div><div><p>Hiraya Journeys is a travel and tourism agency created to help travelers discover Ilocos Norte through thoughtfully planned trips, local experiences and travel assistance.</p><p>Our business plan centers on authenticity, excellence and care, stewardship and respect, community empowerment, hope and innovation, and partnership and unity.</p></div></div></section>
+<section id="destinations">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">Places worth remembering</div>
+        <h2>Discover Ilocos Norte.</h2>
+      </div>
+      <p>From coastal roads to heritage towns, build a journey around the places you genuinely want to experience.</p>
+    </div>
 
-<section id="destinations" class="section stone"><div class="eyebrow">02 / DESTINATIONS</div><div class="section-head"><h2>Ilocos Norte, <em>unfiltered.</em></h2><p>Explore heritage, natural landscapes, coastal roads, cultural attractions and local communities.</p></div><div class="cards">
-<article class="card"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=88"><div><small>Heritage & Culture</small><h3>Laoag City</h3></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&w=1400&q=88"><div><small>Nature & Adventure</small><h3>La Paz Sand Dunes</h3></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=88"><div><small>Nature & Photography</small><h3>Paoay Lake</h3></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1400&q=88"><div><small>Landmark</small><h3>Bangui Windmills</h3></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=88"><div><small>Scenic Drive</small><h3>Patapat Viaduct</h3></div></article>
-<article class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=88"><div><small>Beach & Leisure</small><h3>Pagudpud</h3></div></article>
-</div></section>
+    <div class="cards">
+      <article class="card reveal">
+        <img class="card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85" alt="Coastal destination">
+        <div class="card-body"><h3>Pagudpud</h3><p>Quiet beaches, dramatic coastlines and long scenic roads.</p><a class="card-link" href="#booking">Plan Pagudpud →</a></div>
+      </article>
+      <article class="card reveal">
+        <img class="card-img" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85" alt="Historic architecture">
+        <div class="card-body"><h3>Laoag</h3><p>Heritage, food, local life and the character of Ilocos Norte.</p><a class="card-link" href="#booking">Plan Laoag →</a></div>
+      </article>
+      <article class="card reveal">
+        <img class="card-img" src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=1000&q=85" alt="Mountain landscape">
+        <div class="card-body"><h3>Bangui</h3><p>Open landscapes and one of the region's iconic coastal views.</p><a class="card-link" href="#booking">Plan Bangui →</a></div>
+      </article>
+      <article class="card reveal">
+        <img class="card-img" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85" alt="Travel landscape">
+        <div class="card-body"><h3>Paoay</h3><p>Heritage architecture, culture and countryside experiences.</p><a class="card-link" href="#booking">Plan Paoay →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-<section id="journeys" class="section"><div class="eyebrow">03 / SERVICES</div><div class="section-head"><h2>Built around <em>your journey.</em></h2><p>From inquiry to final drop-off, Hiraya Journeys coordinates the details.</p></div><div class="service-grid">
-<article class="service"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=88"><div><small>Tour Planning</small><h3>Customized Ilocos Norte Tours</h3><p>Plan around destinations, activities, schedule and budget.</p><a class="link" href="#booking">Request a journey →</a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1000&q=88"><div><small>Transportation</small><h3>Transfers & Travel Coordination</h3><p>Transportation and transfer arrangements throughout the tour.</p><a class="link" href="#booking">Request a transfer →</a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=88"><div><small>Accommodation</small><h3>Accommodation Arrangements</h3><p>Assistance finding and arranging accommodation depending on the package.</p><a class="link" href="#booking">Ask about stays →</a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=88"><div><small>Tour Support</small><h3>Itinerary, Coordination & Assistance</h3><p>Itinerary preparation, booking support, tourist assistance and customer support.</p><a class="link" href="#booking">Plan with us →</a></div></article>
-</div></section>
+<section id="experiences" class="band">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="kicker">Choose your way to travel</div>
+        <h2>Made for your kind of journey.</h2>
+      </div>
+      <p>Simple options for travelers who want the important things handled beautifully.</p>
+    </div>
 
-<section class="split"><div class="split-img"></div><div class="split-copy"><div class="eyebrow">04 / SAMPLE JOURNEY</div><h2>Three days.<br><em>Many stories.</em></h2><p>The business plan's sample itinerary travels from Manila to Laoag and through Ilocos Norte's heritage, nature and coastal destinations, with local food, accommodation and souvenir time.</p><a class="btn light" href="#booking">Request This Journey</a></div></section>
+    <div class="experiences">
+      <article class="exp reveal">
+        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=85" alt="Guided travel">
+        <div class="exp-body"><span class="tag">Tours</span><h3>Private & Guided Tours</h3><p>Curated day trips and custom itineraries around Ilocos Norte.</p><div class="price">From ₱2,500 / group</div><a class="dark-btn" href="#booking">Request a tour</a></div>
+      </article>
+      <article class="exp reveal">
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=85" alt="Road trip">
+        <div class="exp-body"><span class="tag">Transport</span><h3>Transfers & Van Rental</h3><p>Airport transfers and comfortable private transport for your group.</p><div class="price">Custom quotation</div><a class="dark-btn" href="#booking">Request a van</a></div>
+      </article>
+      <article class="exp reveal">
+        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85" alt="Hotel stay">
+        <div class="exp-body"><span class="tag">Stays</span><h3>Hotels & Resorts</h3><p>Stay options selected around your route, dates and travel style.</p><div class="price">Ask for available stays</div><a class="dark-btn" href="#booking">Find a stay</a></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-<section class="section"><div class="eyebrow">05 / WHAT WE STAND FOR</div><div class="values">
-<div><b>01</b><h3>Authenticity</h3><p>Authentic culture, travel experiences and locally inspired products.</p></div>
-<div><b>02</b><h3>Excellence & Care</h3><p>Attentive support, safety, comfort and thoughtful coordination.</p></div>
-<div><b>03</b><h3>Stewardship</h3><p>Respect for destinations, heritage, communities and environment.</p></div>
-<div><b>04</b><h3>Community</h3><p>Local products, local partners and community value.</p></div>
-</div></section>
+<section id="story">
+  <div class="container story">
+    <img class="story-img reveal" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=88" alt="Mountain journey">
+    <div class="story-copy reveal">
+      <div class="kicker">The Hiraya way</div>
+      <h2>Travel slower. Feel more.</h2>
+      <p>Hiraya Journeys is built around the idea that travel should feel personal — not rushed, crowded or generic.</p>
+      <div class="quote">“The best journey is the one that leaves you with something to carry home.”</div>
+      <p>Tell us what you want to see, when you're traveling and who you're traveling with. We'll shape the journey around you.</p>
+    </div>
+  </div>
+</section>
 
-<section id="shop" class="section shop"><div class="eyebrow">06 / ILOCOS SOUVENIRS</div><div class="section-head"><h2>Bring a piece of <em>Ilocos home.</em></h2><p>Locally inspired products described in the Hiraya Journeys business plan.</p></div><div class="products">
-<div class="product"><div class="circle">₱80</div><small>Souvenir</small><h3>Windmill-Inspired Keychain</h3><p>Inspired by the iconic windmills associated with Ilocos Norte.</p><div class="price">Proposed price: ₱80</div></div>
-<div class="product"><div class="circle">₱120</div><small>Food Product</small><h3>Ilocos Garlic Crunch</h3><p>A locally inspired crispy garlic product designed as a snack or topping.</p><div class="price">Proposed price: ₱120 / 100g</div></div>
-<div class="product"><div class="circle">INABEL</div><small>Local Craft</small><h3>Inabel / Abel Iloko-Inspired</h3><p>Possible coin purses, pouches, tote bags, keychain accessories, pencil cases and other fabric souvenirs.</p><div class="price">Estimated ranges vary by product</div></div>
-</div></section>
+<section id="booking">
+  <div class="container booking-wrap">
+    <div class="booking-intro reveal">
+      <div class="kicker">Start here</div>
+      <h2>Plan your journey.</h2>
+      <p>Send your travel details and we'll have the information needed to prepare your itinerary or quotation.</p>
+      <ul>
+        <li>✓ Tour packages & guided tours</li>
+        <li>✓ Airport transfers & van rentals</li>
+        <li>✓ Attractions & entrance tickets</li>
+        <li>✓ Hotels & resorts</li>
+        <li>✓ Online payment or pay-later option</li>
+      </ul>
+    </div>
 
-<section id="booking" class="section booking"><div class="eyebrow">07 / BOOKING REQUEST</div><div class="section-head"><h2>Tell us what you're <em>dreaming of.</em></h2><p>This creates a booking request reference on your device. Live online payments and a connected admin inbox can be added when your business accounts are connected.</p></div>
-<form class="form" id="bookingForm">
-<div class="grid">
-<div class="field"><label>Full name *</label><input name="name" required></div>
-<div class="field"><label>Email *</label><input name="email" type="email" required></div>
-<div class="field"><label>Travel date *</label><input name="date" type="date" required></div>
-<div class="field"><label>Number of travelers *</label><input name="guests" type="number" min="1" value="2" required></div>
-<div class="field full"><label>What do you need?</label><select name="service"><option>Tour package / guided tour</option><option>Customized itinerary</option><option>Airport transfer / van rental</option><option>Tourist attraction / entrance tickets</option><option>Hotel / resort arrangement</option><option>Souvenirs / local products</option></select></div>
-<div class="field full"><label>Preferred destinations / message</label><textarea name="message" placeholder="Example: Pagudpud + Bangui Windmills, 3 days, family of 4..."></textarea></div>
-<div class="field full"><label>Payment preference</label><select name="payment"><option>Pay later / request a quotation</option><option>Online payment when available</option></select></div>
-<div class="field full"><label class="check"><input type="checkbox" required> I understand this is a booking request and availability/pricing will be confirmed by Hiraya Journeys.</label></div>
-</div>
-<button class="btn dark" type="submit">Prepare Booking Request</button>
-<div class="result" id="result"></div>
-</form></section>
-
-<section class="cta"><div><div class="eyebrow">YOUR NEXT CHAPTER</div><h2>Make the dream<br><em>take route.</em></h2></div><a class="btn dark" href="#booking">Build My Journey</a></section>
+    <div class="form-card reveal">
+      <form id="bookingForm">
+        <div class="form-grid">
+          <div class="field"><label>Full name</label><input id="name" required placeholder="Your name"></div>
+          <div class="field"><label>Email</label><input id="email" type="email" required placeholder="you@email.com"></div>
+          <div class="field"><label>Travel date</label><input id="date" type="date" required></div>
+          <div class="field"><label>Guests</label><input id="guests" type="number" min="1" value="2" required></div>
+          <div class="field full">
+            <label>What do you need?</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+              <option>Tour package / guided tour</option>
+              <option>Airport transfer / van rental</option>
+              <option>Tourist attraction / entrance tickets</option>
+              <option>Hotel / resort</option>
+              <option>Custom itinerary</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>Payment preference</label>
+            <select id="payment">
+              <option>Pay later</option>
+              <option>Online payment</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>Tell us about your trip</label>
+            <textarea id="message" placeholder="Places you want to visit, pickup location, hotel preference, special requests, etc."></textarea>
+          </div>
+        </div>
+        <button class="submit" type="submit">Prepare My Booking Request</button>
+        <div class="note">This static version prepares your request on your phone. Connect your email/payment backend before accepting live payments.</div>
+        <div id="success" class="success"></div>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div><b>HIRAYA JOURNEYS</b><p>where dream takes route, journey comes to life</p><p>0717 Quirino Highway, Barangay San Bartolome, Novaliches, Quezon City</p></div><div><a href="#story">About</a><a href="#shop">Souvenirs</a><a href="#booking">Bookings</a></div></footer>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">
+          <img class="logo-img" src="logo.jpeg" alt="Hiraya Journeys logo">
+          <span>HIRAYA<small>JOURNEYS</small></span>
+        </div>
+        <p style="margin-top:18px;max-width:360px">Authentic journeys through Ilocos Norte, created with care.</p>
+      </div>
+      <div><h4>Explore</h4><p><a href="#destinations">Destinations</a></p><p><a href="#experiences">Experiences</a></p><p><a href="#booking">Book a Journey</a></p></div>
+      <div><h4>Contact</h4><p>Ilocos Norte, Philippines</p><p style="margin-top:7px">Hiraya Journeys</p></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Hiraya Journeys. All rights reserved.</div>
+  </div>
+</footer>
 
 <script>
-const form=document.getElementById("bookingForm"),result=document.getElementById("result");
-form.addEventListener("submit",e=>{
- e.preventDefault();
- const d=Object.fromEntries(new FormData(form));
- const code="HJ-"+new Date().getFullYear()+"-"+Math.random().toString(36).slice(2,8).toUpperCase();
- const request={booking_code:code,...d,created_at:new Date().toISOString()};
- localStorage.setItem("hiraya_last_booking",JSON.stringify(request));
- result.style.display="block";
- result.innerHTML="<strong>Request prepared.</strong><br>Your reference is <strong>"+code+"</strong>.<br><br>Save this reference. The next version can connect this form directly to your Hiraya Journeys admin dashboard and payment provider.";
- result.scrollIntoView({behavior:"smooth",block:"center"});
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")});
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name=document.getElementById("name").value.trim();
+  const email=document.getElementById("email").value.trim();
+  const date=document.getElementById("date").value;
+  const guests=document.getElementById("guests").value;
+  const service=document.getElementById("service").value;
+  const payment=document.getElementById("payment").value;
+  const message=document.getElementById("message").value.trim();
+
+  const request =
+`HIRAYA JOURNEYS — BOOKING REQUEST
+
+Name: ${name}
+Email: ${email}
+Travel date: ${date}
+Guests: ${guests}
+Service: ${service}
+Payment preference: ${payment}
+
+Trip details:
+${message || "None provided."}`;
+
+  navigator.clipboard?.writeText(request).catch(()=>{});
+  const box=document.getElementById("success");
+  box.classList.add("show");
+  box.innerHTML="<strong>Your booking request is ready.</strong><br>We've copied the details to your clipboard. Paste them into your email, Messenger or chat with Hiraya Journeys.";
+  box.scrollIntoView({behavior:"smooth",block:"nearest"});
 });
 </script>
 </body>
